@@ -1,24 +1,23 @@
-/* eslint-disable prefer-const */
 import React from 'react';
 
 import { useSearchParams } from "react-router-dom";
 import { useTodos } from '../store/Todos';
 
-const AllTodos = () => {
+const AllToDos = () => {
     const {todos, toggleTodoAsCompleted, handleDeleteTodo} = useTodos();
 
     const [searchParams] = useSearchParams();
-    let todos̥Data = searchParams.get("todos");
-    console.log("🚀 ~ file: todos.tsx:10 ~ Todos ~ todos̥Data:", todos̥Data)
+    let todosData = searchParams.get("todos");
+    /* console.log("🚀 ~ file: todos.tsx:10 ~ Todos ~ todos̥Data:", todos̥Data) */
 
 
     let filterData = todos;
 
-    if(todos̥Data === "active"){
+    if(todosData === "active"){
         filterData = filterData.filter((task) => !task.completed  )
     }
 
-    if(todos̥Data === "completed"){
+    if(todosData === "completed"){
         filterData = filterData.filter((task) => task.completed  )
     }
 
@@ -46,4 +45,4 @@ const AllTodos = () => {
   )
 }
 
-export default AllTodos;
+export default AllToDos;
