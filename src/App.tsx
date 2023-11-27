@@ -9,11 +9,9 @@ function App() {
   return (
     <main>
       <h1>List Your Daily Task</h1>
-      <div>
         <Navbar />
         <Addtodo />
         <AllToDos />
-      </div>
     </main>
   );
 }
