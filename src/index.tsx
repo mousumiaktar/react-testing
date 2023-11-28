@@ -2,9 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
-
 import { BrowserRouter } from "react-router-dom";
-import { TodosProvider } from './store/Todos';
 import App from "./App";
 
 const root = ReactDOM.createRoot(
@@ -13,9 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <BrowserRouter>
     <React.StrictMode>
-      <TodosProvider>
-        <App />
-      </TodosProvider>
+      <App />
     </React.StrictMode>
   </BrowserRouter>
 );

@@ -1,19 +1,14 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import TaskManager from './pages/TaskManager';
 
-import Addtodo from "./components/Addtodo";
-import AllToDos from "./components/AllToDos";
-import Navbar from "./components/Navbar";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <main>
-      <h1>List Your Daily Task</h1>
-        <Navbar />
-        <Addtodo />
-        <AllToDos />
-    </main>
+    <div>
+      <h1>Task Management</h1>
+      <TaskManager />
+    </div>
   );
-}
+};
 
 export default App;
