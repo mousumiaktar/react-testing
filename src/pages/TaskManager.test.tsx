@@ -8,7 +8,7 @@ import TaskManager from './TaskManager';
 test('renders TaskManager', async () => {
   render(<TaskManager />);
 
-  // Add a task
+  
   const inputTask = screen.getByPlaceholderText('Add a task...');
   const addButton = screen.getByText('Add Task');
   fireEvent.change(inputTask, { target: { value: 'Test Task' } });
