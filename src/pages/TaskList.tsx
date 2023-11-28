@@ -16,7 +16,7 @@ const TaskList: React.FC<TaskListProps> = ({ tasks, onComplete, onDelete }) => {
           task={task.task}
           completed={task.completed}
           onComplete={() => onComplete(index)}
-          onDelete={onDelete ? () => onDelete(index) : undefined} // Check if onDelete is defined
+          onDelete={onDelete ? () => onDelete(index) : undefined}
         />
       ))}
     </div>
