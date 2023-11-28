@@ -4,7 +4,7 @@ import Task from './Task';
 interface TaskListProps {
   tasks: { task: string; completed: boolean }[];
   onComplete: (index: number) => void;
-  onDelete?: (index: number) => void; // Make onDelete optional
+  onDelete?: (index: number) => void; 
 }
 
 const TaskList: React.FC<TaskListProps> = ({ tasks, onComplete, onDelete }) => {

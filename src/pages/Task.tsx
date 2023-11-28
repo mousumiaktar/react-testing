@@ -4,7 +4,7 @@ interface TaskProps {
   task: string;
   completed: boolean;
   onComplete: () => void;
-  onDelete?: () => void; // Make onDelete optional
+  onDelete?: () => void; 
 }
 
 const Task: React.FC<TaskProps> = ({ task, completed, onComplete, onDelete }) => {
